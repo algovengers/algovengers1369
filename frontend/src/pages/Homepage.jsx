@@ -1,7 +1,9 @@
+import Nav from "../components/Nav";
+
 function Homepage() {
   return (
     <>
-      <h1>hey this is the homepage</h1>
+      <Nav />
     </>
   );
 }
