@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat&family=Open+Sans:wght@300&display=swap');
+.choose-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Open Sans', sans-serif;
+}
+.left-choose{
+    background:  #b282ed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafcff;
+    flex-direction: column;
+}
+.left-choose p{
+    max-width: 415px;
+    text-align: center;
+}
+.choose-signup1{
+    background: transparent;
+    border: 2px solid #fafcff;
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    color:#fafcff ;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.right-choose{
+    background: #fafcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right-choose p{
+    max-width: 415px;
+    text-align: center;
+}
+.choose-signup2{
+    background: transparent;
+    border: 2px solid #b282ed;
+    background: #b282ed;
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    color:#fafcff ;
+    margin: 20px auto;
+    cursor: pointer;
+}
