@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import Nav from "../components/Nav";
 import styles from "./Homepage.module.css";
 import descriptionImage from "../assets/image.jpg";
+import SideBar from "../components/sideBar";
 
-const { main, header, teamLogo, project, nameDiv, descriptionDiv } = styles;
+const { main, header, teamLogo, project, nameDiv, descriptionDiv, bo } = styles;
 
 function Main() {
   const [apiData, setApiData] = useState([]);
@@ -57,7 +58,10 @@ function Homepage() {
   return (
     <>
       <Nav />
-      <Main />
+      <div className={bo}>
+        <Main />
+        <SideBar />
+      </div>
     </>
   );
 }

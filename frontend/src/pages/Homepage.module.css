@@ -1,3 +1,8 @@
+/* .bo {
+  display: flex;
+  height: 100vh;
+} */
+
 .main {
   width: 70%;
 }
@@ -41,11 +46,14 @@
 }
 
 .project h3 {
-  font-size: 0.9rem;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .project h4 {
-  font-size: 0.8rem;
+  /* font-style: italic; */
+  font-size: 0.9rem;
+  /* font-size: 1rem; */
   font-weight: 400;
 }
 
@@ -65,7 +73,7 @@
 }
 
 .descriptionDiv p {
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 25px 0 0;
   text-align: justify;
 }
