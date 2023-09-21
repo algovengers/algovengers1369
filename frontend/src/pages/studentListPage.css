@@ -1,0 +1,11 @@
+.studentListPageContainer {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: greenyellow;
+}
+
+.studentMain{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+}
