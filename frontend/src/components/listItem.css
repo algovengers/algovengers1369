@@ -1,0 +1,19 @@
+.listItem {
+    height: 4rem;
+    width: 99%;
+    background-color: rgba(193, 193, 193, 0.332);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    align-items: center;
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 0 0 1px 1px; */
+    margin-top: 1px;
+    margin-left: 1px;
+    transition: all 0.1s ease-in-out;
+}
+
+.listItem:hover{
+    background-color: rgba(193, 193, 193, 0.588);
+    cursor: pointer;
+}
