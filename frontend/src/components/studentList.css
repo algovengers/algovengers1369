@@ -1,0 +1,11 @@
+.studentListContainer {
+    height: 100%;
+    width: 80%;
+    /* background-color: goldenrod; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    overflow:auto;
+}
