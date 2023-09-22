@@ -1,0 +1,151 @@
+#student_dashboard_container * {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#student_dashboard_container {
+  --space-around: 30px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-around);
+  padding: var(--space-around);
+  background-color: rgb(207, 214, 215);
+  box-sizing: border-box;
+}
+#student_dashboard_container .left_panel,
+#student_dashboard_container .right_panel {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  overflow: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========== LEFT PANEL =========== */
+#student_dashboard_container .left_panel {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  word-wrap: break-word;
+}
+#student_dashboard_container .left_panel * {
+  font-size: 20px;
+}
+#student_dashboard_container .left_panel .profile_picture {
+  width: 120px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: rgb(157, 157, 157);
+}
+
+#student_dashboard_container .left_panel .profile_userId {
+  font-style: italic;
+}
+
+#student_dashboard_container .left_panel .profile_name {
+  word-wrap: break-word;
+  width: 100%;
+  text-align: center;
+}
+
+#student_dashboard_container .left_panel .profile_institute {
+  word-wrap: break-word;
+  width: 100%;
+  text-align: center;
+}
+
+#student_dashboard_container .left_panel .edit_profile {
+  appearance: none;
+  background-color: rgb(0, 76, 175);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#student_dashboard_container .left_panel .edit_profile:hover,
+#student_dashboard_container .left_panel .edit_profile:focus {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3), 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+#student_dashboard_container .left_panel .new_project {
+  appearance: none;
+  background-color: rgb(168, 0, 92);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#student_dashboard_container .left_panel .new_project:hover,
+#student_dashboard_container .left_panel .new_project:focus {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3), 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* =========== RIGHT PANEL =========== */
+#student_dashboard_container .right_panel {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+#student_dashboard_container .right_panel #heading {
+  font-size: 25px;
+}
+
+#student_dashboard_container .right_panel #project_search {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+#student_dashboard_container .right_panel #project_search:hover,
+#student_dashboard_container .right_panel #project_search:focus {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+#student_dashboard_container .right_panel .project_list {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 15px;
+}
+
+/* =========== Each Projects =========== */
+#student_dashboard_container .right_panel .project_list .project {
+  background-color: rgb(229, 236, 238);
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+#student_dashboard_container .right_panel .project_list .project .title {
+  font-size: 22px;
+}
+
+#student_dashboard_container .right_panel .project_list .project .uploadedOn {
+  font-size: 15px;
+  font-style: italic;
+}
+
+#student_dashboard_container .right_panel .project_list .project .description {
+  line-height: 25px;
+}
