@@ -1,0 +1,83 @@
+.bo {
+  margin-top: 100px;
+}
+
+.main {
+  width: 70%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  /* margin: 10px 0; */
+  /* height: 130px; */
+  /* justify-content: center; */
+}
+
+.teamLogo {
+  text-align: center;
+  font-size: 3.5rem;
+  /* border: 2px solid brown; */
+  background-color: #b35daa;
+  color: #eee;
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  /* margin-bottom: ; */
+}
+
+.nameDiv {
+  /* padding: 10px; */
+  flex: 1;
+}
+.nameDiv div {
+  /* display: flex; */
+  gap: 25px;
+  /* justify-content: space-between; */
+}
+
+.project h3 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.project h4 {
+  /* font-style: italic; */
+  font-size: 0.9rem;
+  /* font-size: 1rem; */
+  font-weight: 400;
+}
+
+.project {
+  margin: 30px 100px;
+  background-color: #dcdcdc;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+.project:hover {
+  box-shadow: 6px 6px 20px 0px rgba(150, 150, 150, 0.24);
+}
+
+.descriptionDiv {
+  display: flex;
+  gap: 15px;
+}
+
+.descriptionDiv p {
+  font-weight: 500;
+  padding: 0 25px 0 0;
+  text-align: justify;
+}
+
+.descriptionDiv img {
+  height: 120px;
+  border-radius: 15px;
+}
