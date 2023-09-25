@@ -1,6 +1,6 @@
 import styles from "./sidebar.module.css";
 
-const { sideBar } = styles;
+const { sideBar,creditinals  } = styles;
 
 const SideBar = () => {
   return (
@@ -16,6 +16,13 @@ const SideBar = () => {
         <button>Artificial Intelligence</button>
         <button>Chatbots</button>
         <button>Game Development</button>
+      </div>
+      <div className={creditinals}>
+        <h3> These are dummy emails for login purposes </h3>
+        Student Email: Subharti@student.com <br />
+        passsword: Subharti <br />
+        University Email: tmsl@tmsl.com <br />
+        passsword : technomain
       </div>
     </div>
   );

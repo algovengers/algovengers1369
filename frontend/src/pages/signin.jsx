@@ -28,17 +28,17 @@ const Signin = () => {
             </div>
             <div className="input-signin">
               <span>Password</span>
-              <input type="text" name="passsword" required="required" />
+              <input type="password" name="passsword" required="required" />
             </div>
             <div className="submit-signin">
-              <input type="submit" value="Sign-in" />
+              <input style={{cursor:`pointer`}} type="submit" value="Sign-in" />
             </div>
           </form>
         </div>
         <div className="right-side">
           <div className="right-heading">Don't have an account?</div>
           <div className="signupRight">
-            <button onClick={handleSignUp} className="signup-button-right">Sign-Up</button>
+            <button style={{cursor:`pointer`}} onClick={handleSignUp} className="signup-button-right">Sign-Up</button>
           </div>
         </div>
       </div>

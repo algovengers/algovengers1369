@@ -43,7 +43,7 @@ function UniNav() {
         />
       </div>
       <div className={sign}>
-        <button onClick={handleSignout} style={{display:"flex",justifyContent:"space-evenly",alignItems:"center",gap:"0.4rem"}} className={`${btn} ${signIn}`}>Sign Out</button>
+        <button onClick={handleSignout} style={{display:"flex",justifyContent:"space-evenly",alignItems:"center",gap:"0.4rem",cursor:"pointer"}} className={`${btn} ${signIn}`}>Sign Out</button>
       </div>
     </nav>
   );

@@ -28,3 +28,8 @@
 .sideBar button:hover {
   box-shadow: 1px 1px 5px 0px rgba(150, 150, 150, 0.24);
 }
+
+.creditinals {
+  margin-top:100px;
+  border: 2px solid #b35daa;
+}

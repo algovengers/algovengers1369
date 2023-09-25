@@ -16,8 +16,8 @@ const handleSignin = () =>{
                 <div className="left-heading">
                     Already have an account?
                 </div>
-                <div className="signinLeft">cd
-                    <button onClick={handleSignin} className=" signin-button hover-slide-left">Sign-in</button>
+                <div className="signinLeft">
+                    <button style={{cursor:`pointer`}} onClick={handleSignin} className=" signin-button hover-slide-left">Sign-in</button>
                 </div>
             </div>
             <div className="form-signup">
@@ -42,7 +42,7 @@ const handleSignin = () =>{
                         <input type="text" name="College Name" required="required" />
                     </div>
                     <div className="submit-button">
-                        <input type="submit" value="Sign-up"/>
+                        <input style={{cursor:`pointer`}} type="submit" value="Sign-up"/>
                     </div>
                     
                 </form>

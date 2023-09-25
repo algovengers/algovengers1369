@@ -48,8 +48,8 @@ function Nav() {
         />
       </div>
       <div className={sign}>
-        <button onClick={handleSignin} className={`${btn} ${signIn}`}>Sign In</button>
-        <button onClick={handleSignUp} className={`${btn} ${signUp}`}>Sign Up</button>
+        <button onClick={handleSignin} className={`${btn} ${signIn}`} style={{cursor:`pointer`}}>Sign In</button>
+        <button onClick={handleSignUp} className={`${btn} ${signUp}`} style={{cursor:`pointer`}}>Sign Up</button>
       </div>
     </nav>
   );
