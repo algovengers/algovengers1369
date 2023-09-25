@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signin.css";
+import { Navigate, useNavigate } from "react-router-dom";
 const Signin = () => {
-  const handleSignin = () => {
-    console.log("yaya");
+  const [email,setEmail] = useState("");
+  const Navigate = useNavigate();
+  const handleSignin = (em) => {
+    if(em=="tmsl@tmsl.com"){
+      Navigate("/CollegePanel");
+    }
+    else{
+      Navigate("/Student");
+    }
+  };
+  const handleSignUp = () => {
+      Navigate("/choose")
   };
   return (
+  
     <div className="signin-container">
       <div className="signin-box">
         <div className="form-signin">
           <div className="signin-heading">SignIn</div>
-          <form onSubmit={handleSignin}>
+          <form onSubmit={()=>handleSignin(email)}>
             <div className="input-signin">
               <span>Email</span>
-              <input type="text" name="Email" required="required" />
+              <input type="text" name="Email" onChange={(e)=>setEmail(e.target.value)} required="required" />
             </div>
             <div className="input-signin">
               <span>Password</span>
@@ -26,7 +38,7 @@ const Signin = () => {
         <div className="right-side">
           <div className="right-heading">Don't have an account?</div>
           <div className="signupRight">
-            <button className="signup-button-right">Sign-Up</button>
+            <button onClick={handleSignUp} className="signup-button-right">Sign-Up</button>
           </div>
         </div>
       </div>

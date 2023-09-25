@@ -3,10 +3,12 @@ import Nav from "../components/Nav";
 import styles from "./Homepage.module.css";
 import descriptionImage from "../assets/image.jpg";
 import SideBar from "../components/sideBar";
-
+import { Navigate, useNavigate } from "react-router-dom";
 const { main, header, teamLogo, project, nameDiv, descriptionDiv, bo } = styles;
 
+
 function Main() {
+  const Navigate = useNavigate();
   const [apiData, setApiData] = useState([]);
 
   useEffect(function () {

@@ -14,7 +14,9 @@
 
 .panelCard:hover{
     cursor: pointer;
-    scale: 1.05;
+    transform: scale(1.05);
+    box-shadow: #3734375c 0 0 3px 1px,#37343747 0 0 10px 3px;
+
 }
 
 .imgContainer {
@@ -28,6 +30,10 @@
 }
 
 .cardImg {
-    font-size: 7rem;
     margin: auto;
+    height: 100%;
+    width: 100%;
+    background-size:70% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

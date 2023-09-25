@@ -93,6 +93,25 @@
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3), 0 0 3px 1px rgba(0, 0, 0, 0.5);
 }
 
+
+#student_dashboard_container .left_panel .sign_out {
+  appearance: none;
+  background-color: rgb(110, 110, 110);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#student_dashboard_container .left_panel .sign_out:hover,
+#student_dashboard_container .left_panel .sign_out:focus {
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3), 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
 /* =========== RIGHT PANEL =========== */
 #student_dashboard_container .right_panel {
   flex-grow: 1;

@@ -2,9 +2,9 @@ import "./panelCard.css";
 
 function PanelCards(props) {
   return (
-    <div className="panelCard">
+    <div className="panelCard" onClick={props.onClick}>
       <div className="imgContainer">
-        <span class={`material-symbols-outlined cardImg`}>{props.name}</span>
+        <div className={`cardImg`} style={{backgroundImage:`url("./${props.name}.svg")`}}></div>
       </div>
       <p className="cardTitle">{props.title}</p>
     </div>

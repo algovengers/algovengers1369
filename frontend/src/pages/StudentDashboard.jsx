@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "../components/StudentDashboard.css";
 
 const dummy_userdata = {
@@ -35,6 +36,10 @@ const dummy_projects = [
 ];
 
 export default function StudentDashboard() {
+  const Navigate = useNavigate();
+  const handleSignout =  () =>{
+    Navigate("/");
+  }
   return (
     <div className="container" id="student_dashboard_container">
       <div className="left_panel">
@@ -44,6 +49,7 @@ export default function StudentDashboard() {
         <div className="profile_institute">{dummy_userdata.institute}</div>
         <button className="edit_profile">Edit Profile</button>
         <button className="new_project">New Project</button>
+        <button onClick={handleSignout} className="sign_out">Sign Out</button>
       </div>
       <div className="right_panel">
         <div id="heading">Your Projects</div>

@@ -1,9 +1,14 @@
 import React from "react";
 import "./signup.css";
+import { useNavigate } from "react-router-dom";
 const SignupForm = ()=>{
     const handleFormSubmit = ()=>{
         console.log("yay");
     }
+    const Navigate = useNavigate();
+const handleSignin = () =>{
+    Navigate("/signin");
+}
     return (
         <div className="signup-container">
             <div className="signup-box">
@@ -11,8 +16,8 @@ const SignupForm = ()=>{
                 <div className="left-heading">
                     Already have an account?
                 </div>
-                <div className="signinLeft">
-                    <button className="btn btn-1 signin-button hover-slide-left">Sign-in</button>
+                <div className="signinLeft">cd
+                    <button onClick={handleSignin} className=" signin-button hover-slide-left">Sign-in</button>
                 </div>
             </div>
             <div className="form-signup">

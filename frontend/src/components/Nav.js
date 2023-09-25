@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "./Nav.module.css";
-
+import { Navigate, useNavigate } from "react-router-dom";
 function Nav() {
+  const Navigate = useNavigate();
   const {
     navBar,
     logo,
@@ -25,23 +26,30 @@ function Nav() {
   const handleInputBlur = () => {
     setIsInputFocused(false);
   };
-
+  const handleSignin= ()=>{
+    Navigate("signin")
+  };
+  const handleSignUp = () =>{
+    Navigate("choose");
+  }
   return (
     <nav className={navBar}>
-      <h1 className={logo}>LOGO</h1>
+      <div className={logo} >
+        <img src="./logo4b.png" alt="" />
+      </div>
       <div className={isInputFocused ? searchBox_clicked : searchBox}>
         <input
           className={`${inp} ${isInputFocused ? input_clicked : input}`}
           type="text"
-          placeholder="Enter the text"
+          placeholder="Search"
           name="searchBar"
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
         />
       </div>
       <div className={sign}>
-        <button className={`${btn} ${signIn}`}>Sign In</button>
-        <button className={`${btn} ${signUp}`}>Sign Up</button>
+        <button onClick={handleSignin} className={`${btn} ${signIn}`}>Sign In</button>
+        <button onClick={handleSignUp} className={`${btn} ${signUp}`}>Sign Up</button>
       </div>
     </nav>
   );
